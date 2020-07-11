@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    dth, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body{
+            background-color: red;
+            text-align: center;
+            
+        }
+        .stopwatch{
+            block-size: 20px;
+        }     
+ 
+        h1{
+            color: black;
+            display: inline-block;
+            width: 100px;
+            background-color: cornsilk;
+            border-radius: 50px;
+            border: 5px solid black;
+            box-shadow: grey;
+
+        }
+
+        button{
+            color: hotpink;
+            background-color: lavenderblush;
+            border-radius: 50px;
+            box-shadow: lightgray;
+        }
+
+        @media only screen and (max-width: 300px) {
+}
+    </style>
+<body>
+   
+     <div class="stopwatch">Stop Watch</div> 
+    
+    <div>
+        <h1 id="min">0</h1>
+        <h1 id="sec">0</h1>
+        <h1 id="msec">0</h1>
+    </div>
+    <div>
+        <button onclick="start()" id="start" >Start</button>
+        <button onclick="Pause()" id="Pause">Pause</button>
+        <button onclick="reset()" id="reset">Reset</button>
+    </div>
+
+
+<script src="app.js"></script>
+
+
+
+</body>
+</html>
